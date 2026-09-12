@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 0 40px;
+}
+.tituloNav{
+    font-weight: bold;
+}
+.menu{
+    padding: 30px;
+}
+.menu a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover{
+    color: grey;
+    transition: 1000ms;
+    font-size: 25px;
+}
+
+
+
+
+
+
+.formularioContenedor{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+h1{
+    /* border-bottom: 1px solid red; */
+}
+
+
+.formulariostyle{
+    /* opacity: 50%; */
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+/* display cambia horientazion, gap margen entre input- margin separacion, 
+margin-botton separacion en un lado en particular
+ */
+
+.fila{    
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+input, select{
+    
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+input:focus, select:focus{
+    outline: none;
+    border-color: blueviolet;
+
+}
+
+.botones{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+
+.botonGuardar{
+    background-color: #2563eb;
+    color: aliceblue;
+}

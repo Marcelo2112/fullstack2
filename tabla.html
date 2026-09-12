@@ -1,0 +1,46 @@
+<table border="1">
+
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Pais</th>
+        </tr>
+    </thead>
+    
+    
+    <tbody id="tablaDatos">
+
+        <!-- aca iran los registros dinamicos -->
+        <!-- <tr>
+            <td>Marcelo</td>
+            <td>Soto</td>
+            <td>+56947856985</td>
+            <td>Cl</td>
+        </tr> -->
+
+        
+    </tbody>
+</table>
+
+<script>
+    const obtenerDatosUsuario = JSON.parse(localStorage.getItem("usuarioLocalStorage"))
+    console.log("Recuperando datos: ", obtenerDatosUsuario);
+    const tabla = document.getElementById("tablaDatos");
+
+    tabla.innerHTML = `
+    <tr>
+        <td>1</td>
+        <td>${obtenerDatosUsuario.nombre}</td>
+        <td>${obtenerDatosUsuario.apellido}</td>
+        <td>${obtenerDatosUsuario.telefono}</td>
+        <td>${obtenerDatosUsuario.pais}</td>
+    </tr>
+    `
+
+
+
+</script>
+

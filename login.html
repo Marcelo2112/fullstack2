@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="tituloNav">
+            Titulo web
+        </div>
+
+        <div class="menu">
+            <a href="">
+                Inicio
+            </a>
+            <a href=""> Formulario</a>
+            <a href=""> Login</a>
+            <a href="tabla.html"> Tabla</a>
+
+        </div>
+
+    </nav>
+
+    <div class="formularioContenedor">
+        <form class="formulariostyle" id="formulario">
+            <h1>Login</h1>
+            <hr style="margin-bottom: 20px;">
+
+            <!-- nombre y apellidp -->
+            <div class="fila">
+                <div class="campo">
+                    <label>Nombre</label>
+                    <input type="text" id="nombreLogin" placeholder="45465132">
+
+                </div>
+                <div class="campo">
+                    <label>Contraseña</label>
+                    <input type="password" id="passwordLogin">
+
+                </div>
+            </div>
+
+            <div>
+                <button id="botonConsoleLog" type="button"> Boton Console Log </button>
+            </div>
+
+
+            <div class="botones">
+                <button class="botonGuardar" type="submit">Guardar</button>
+            </div>
+
+            <button type="button" onclick="window.location.href='index.html'" style="margin-top: 15px;">
+                Ir a formulario
+            </button>
+
+        </form>
+        <script src="login.js"></script>
+    </div>
+</body>
+
+</html>
